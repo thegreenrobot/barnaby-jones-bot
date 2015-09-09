@@ -32,6 +32,6 @@
     "sinon": "^1.14.1"
   },
   "scripts": {
-    "test": "node_modules/.bin/mocha --compilers coffee:coffee-script/register tests --reporter spec"
+    "test": "mocha --compilers coffee:coffee-script/register tests --reporter spec"
   }
 }

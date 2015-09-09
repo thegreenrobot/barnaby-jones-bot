@@ -5,7 +5,7 @@
 default: help
 
 lint:  ## Lint the CoffeeScript files in the scripts/ directory.
-	node_modules/.bin/coffeelint -f coffeelint.json scripts/ tests/
+	node_modules/.bin/coffeelint scripts/ tests/
 
 spec: test
 test:  ## Run the mocha tests against the scripts directory.
