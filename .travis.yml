@@ -1,6 +1,9 @@
 language: node_js
 node_js:
   - 0.10
-install: npm install -g coffeelint
 script:
   - coffeelint scripts/
+  - npm test
+before_script:
+  - npm install -g coffeelint
+  - npm install mocha

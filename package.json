@@ -5,7 +5,7 @@
   "author": "Matthew Green <thematthewgreen@gmail.com>",
   "description": "A Slack Hubot specializing in the history of Frisky Dingo",
   "dependencies": {
-    "hubot": "^2.16.0",
+    "hubot": ">= 2.6.0 < 2.14.0",
     "hubot-diagnostics": "0.0.1",
     "hubot-google-images": "^0.2.1",
     "hubot-google-translate": "^0.2.0",
@@ -21,5 +21,17 @@
   },
   "engines": {
     "node": "0.10.x"
+  },
+  "devDependencies": {
+    "chai": "^2.3.0",
+    "coffee-script": "^1.9.3",
+    "coffeelint": "^1.9.4",
+    "hubot-test-helper": "0.0.6",
+    "mocha": "^2.2.5",
+    "nock": "^2.3.0",
+    "sinon": "^1.14.1"
+  },
+  "scripts": {
+    "test": "mocha --compilers coffee:coffee-script/register tests --reporter spec"
   }
 }
